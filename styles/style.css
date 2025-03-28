@@ -289,96 +289,87 @@
   margin: 0;
 }
 .membership {
-  padding: 100px 0 140px;
-  background-color: #057bf2;
-  color: #ffffff;
+  background-color: #2f80ed;
+  color: #fff;
+  padding: 100px 80px;
+  text-align: center;
 }
 
 .membership__title {
-  max-width: 574px;
-  margin: 0 auto;
-  text-align: center;
   font-size: 44px;
-  font-weight: 500;
-  line-height: 52px;
+  font-weight: bold;
+  margin-bottom: 60px;
 }
 
 .membership__steps {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin: 100px 0 0;
   display: flex;
-  justify-content: center;
-  column-gap: 40px;
-}
-
-.step {
-  flex-basis: 220px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .step__title {
-  margin: 0;
   font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
   display: flex;
   align-items: center;
-}
-
-.step__icon {
-  margin-left: 20px;
+  gap: 10px;
+  justify-content: center;
+  margin: 0;
 }
 
 .step__description {
-  margin: 10px 0 0;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .footer {
-  box-sizing: border-box;
   background-color: #1f1f1f;
-  color: #fff;
-  padding: 60px 80px;
+  color: white;
+  padding: 80px 80px 60px;
 }
 
 .footer__columns {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.footer__column_content_hours {
-  margin-left: auto;
-}
-
-.footer__column_content_social {
-  margin-left: 80px;
+.footer__columns#footer-columns {
 }
 
 .footer__logo {
-  height: 58px;
-  width: 80px;
+  width: 58px;
+  height: 80px;
+}
+
+.footer__column {
+  flex: 1;
+  min-width: 160px;
 }
 
 .footer__column-heading {
   font-size: 16px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .footer__list {
-  /* O código abaixo remove os estilos do navegador padrão para listas */
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
-  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .footer__column-link {
-  color: white;
   text-decoration: none;
+  color: white;
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  gap: 8px;
 }
 
 .footer__social-icon {
@@ -387,5 +378,6 @@
 }
 
 .footer__copyright {
-  margin-top: 100px;
+  margin-top: 60px;
+  font-size: 14px;
 }
