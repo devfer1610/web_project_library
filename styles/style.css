@@ -2,10 +2,9 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: auto;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  background-color: #fff;
 }
 
 .header {
@@ -25,17 +24,18 @@
 }
 
 .nav__logo {
-  width: 58px;
   height: 80px;
+  width: 58px;
 }
 
 .nav__links {
   display: flex;
-  column-gap: 20px;
   list-style-type: none;
-  margin-top: 8px;
-  margin-bottom: 0;
-  padding-left: 0;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 20px;
+  padding: 0;
+  margin: 8px 0 0;
 }
 
 .nav__link {
@@ -47,22 +47,21 @@
 .header__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header__title {
+  margin: 128px 0 0 0;
+  max-width: 635px;
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
-  max-width: 635px;
-  margin: 128px 0 32px 0;
 }
 
 .header__description {
+  margin-top: 32px;
   max-width: 515px;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 32px;
 }
 
 .header__image {
@@ -89,19 +88,18 @@
 }
 
 .staff {
-  background-image: url(../images/staff_picks_background.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url("../images/staff_picks_background.jpg");
   padding: 100px 0 140px;
+  background-size: cover;
 }
 
 .staff__title {
   text-align: center;
   font-size: 44px;
+  line-height: 52px;
   font-weight: 400;
   margin: 0 0 24px;
   color: #ffffff;
-  line-height: 52px;
 }
 
 .staff__subtitle {
@@ -110,7 +108,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  color: #fff;
+  color: #ffffff;
 }
 
 .staff__cards {
@@ -120,8 +118,8 @@
   gap: 40px;
   max-width: 760px;
   margin: 68px auto 0;
-  padding: 0;
   list-style-type: none;
+  padding: 0;
 }
 
 .card {
@@ -154,7 +152,8 @@
 }
 
 .card__footer {
-  margin: auto 0 0px;
+  margin: 0;
+  margin-top: auto;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
@@ -248,8 +247,8 @@
 }
 
 .person_name_burbidge {
-  top: 96px;
   right: 125px;
+  top: 96px;
 }
 
 .person_name_cannon {
@@ -258,8 +257,8 @@
 }
 
 .person_name_mitchell {
-  bottom: 82px;
   left: 142px;
+  bottom: 82px;
 }
 
 .person_name_tarter {
@@ -288,88 +287,114 @@
   font-size: 14px;
   margin: 0;
 }
+
 .membership {
-  background-color: #2f80ed;
-  color: #fff;
-  padding: 100px 80px;
-  text-align: center;
+  padding: 100px 0 140px;
+  background-color: #057bf2;
+  color: #ffffff;
 }
 
 .membership__title {
+  max-width: 574px;
+  margin: 0 auto;
+  text-align: center;
   font-size: 44px;
-  font-weight: bold;
-  margin-bottom: 60px;
+  font-weight: 500;
+  line-height: 52px;
 }
 
 .membership__steps {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
+  margin: 100px 0 0;
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.step {
+  flex-basis: 220px;
 }
 
 .step__title {
+  margin: 0;
   font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 10px;
-  justify-content: center;
-  margin: 0;
+}
+
+.step__icon {
+  margin-left: 20px;
 }
 
 .step__description {
-  font-size: 16px;
-  margin-top: 10px;
+  margin: 10px 0 0;
 }
 
 .footer {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  padding: 60px 80px 60px 80px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
   background-color: #1f1f1f;
-  color: white;
-  padding: 80px 80px 60px;
+  color: #fff;
 }
 
 .footer__columns {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.footer__columns#footer-columns {
+.footer__column_content_hours {
+  position: absolute;
+  margin-left: auto;
+  top: 60px;
+  right: 260px;
+}
+
+.footer__column_content_social {
+  position: absolute;
+  margin-left: 80px;
+  right: 80px;
+  top: 60px;
 }
 
 .footer__logo {
+  position: absolute;
+  top: 60px;
+  left: 80px;
   width: 58px;
   height: 80px;
 }
 
-.footer__column {
-  flex: 1;
-  min-width: 160px;
-}
-
 .footer__column-heading {
-  font-size: 16px;
-  font-weight: bold;
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .footer__list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
-  margin-bottom: 10px;
+  padding-bottom: 16px;
+}
+
+.footer__list-item_content_last {
+  padding-bottom: 0;
 }
 
 .footer__column-link {
-  text-decoration: none;
-  color: white;
   display: flex;
   align-items: center;
-  gap: 8px;
+  color: white;
+  text-decoration: none;
+  column-gap: 10px;
 }
 
 .footer__social-icon {
@@ -378,6 +403,8 @@
 }
 
 .footer__copyright {
-  margin-top: 60px;
-  font-size: 14px;
+  margin-top: 100px;
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
 }
